@@ -14,7 +14,8 @@ using namespace std;
 #define ASSERT(condition, statement) \
     do { \
         if (!(condition)) { \
-           statement; assert(condition); \
+           statement; \
+           assert(condition); \
         } \
     } while (false)
 
@@ -101,52 +102,57 @@ void generateFormula(Sudoku sudoku,unsigned n)
     }
   }
 
-  /*  5) Each number at most once in each block
-   *
-   *  ~(Xsqrt(n)*i+is,sqrt(n)*j+js,k /\ Xsqrt(n)*i+is,sqrt(n)*j+jss,k)
-   *  --> ~Xsqrt(n)*i+is,sqrt(n)*j+js,k \/ ~Xsqrt(n)*i+is,sqrt(n)*j+jss,k
-   *  Each number at most once in row in same block*/
+  /*  5) Each number at most once in each block */
 
    unsigned sqrtn = (unsigned)sqrt(n);
-   for(unsigned i = 0; i < sqrtn; i++){
-     for(unsigned j = 0; j < sqrtn; j++){
-       for(unsigned k = 1; k <= n; k++){
-         for(unsigned i_s = 0; i_s < sqrtn; i_s++){
-          for(unsigned j_s = 0; j_s < sqrtn; j_s++){
-            for(unsigned j_ss = j_s + 1; j_ss < sqrtn; j_ss++){
-              Clause c;
-              c.push_back(-((i*sqrtn+i_s)*n*n+(j*sqrtn+j_s)*n+k));
-              c.push_back(-((i*sqrtn+i_s)*n*n+(j*sqrtn+j_ss)*n+k));
-              clauses.push_back(c);
-            }
-          }
-         }
-       }
-     }
+   unsigned m;
+   if(sqrtn*sqrtn != n){
+     m = n/sqrtn;
+   }
+   else{
+     m = sqrtn;
    }
 
-   /* ~(Xsqrt(n)*i+is,sqrt(n)*j+js,k /\ Xsqrt(n)*i+iss,sqrt(n)*j+jss,k)
-    *  --> ~Xsqrt(n)*i+is,sqrt(n)*j+js,k \/ ~Xsqrt(n)*i+iss,sqrt(n)*j+jss,k
-    *  Each number at most once in column and each number at most once diagonal in same block*/
+   /*Each number at least once in each block
+   *  (Xsqrt(n)*i+is,m*j+js,1 /\ (Xsqrt(n)*i+is,m*j+js,2 /\ ... /\ (Xsqrt(n)*i+is,m*j+js,k
+   */
 
-   for(unsigned i = 0; i < sqrtn; i++){
+   for(unsigned i = 0; i < m; i++){
      for(unsigned j = 0; j < sqrtn; j++){
        for(unsigned k = 1; k <= n; k++){
+         Clause c;
          for(unsigned i_s = 0; i_s < sqrtn; i_s++){
-          for(unsigned j_s = 0; j_s < sqrtn; j_s++){
-            for(unsigned i_ss = i_s + 1; i_ss < sqrtn; i_ss++){
-              for(unsigned j_ss = 0; j_ss < sqrtn; j_ss++){
-                Clause c;
-                c.push_back(-((i*sqrtn+i_s)*n*n+(j*sqrtn+j_s)*n+k));
-                c.push_back(-((i*sqrtn+i_ss)*n*n+(j*sqrtn+j_ss)*n+k));
-                clauses.push_back(c);
-              }
+          for(unsigned j_s = 0; j_s < m; j_s++){
+              c.push_back((i*sqrtn+i_s)*n*n+(j*m+j_s)*n+k);
             }
           }
-         }
-       }
-     }
-   }
+          clauses.push_back(c);
+        }
+      }
+    }
+
+    /* Each number at most once in each block
+    * ~(Xsqrt(n)*i+is,sqrt(n)*j+js,k /\ Xsqrt(n)*i+iss,sqrt(n)*j+jss,k)
+    *  --> ~Xsqrt(n)*i+is,sqrt(n)*j+js,k \/ ~Xsqrt(n)*i+iss,sqrt(n)*j+jss,k */
+
+    for(unsigned i = 0; i < m; i++){
+      for(unsigned j = 0; j < sqrtn; j++){
+        for(unsigned k = 1; k <= n; k++){
+          for(unsigned i_s = 0; i_s < sqrtn; i_s++){
+           for(unsigned j_s = 0; j_s < m; j_s++){
+             for(unsigned i_ss = i_s + 1; i_ss < sqrtn; i_ss++){
+               for(unsigned j_ss = 0; j_ss < sqrtn; j_ss++){
+                 Clause c;
+                 c.push_back(-((i*sqrtn+i_s)*n*n+(j*m+j_s)*n+k));
+                 c.push_back(-((i*sqrtn+i_ss)*n*n+(j*m+j_ss)*n+k));
+                 clauses.push_back(c);
+               }
+             }
+           }
+          }
+        }
+      }
+    }
 
   /*  6) Prefilled value*/
   for(unsigned i = 0; i < n; i++){
@@ -230,7 +236,7 @@ Sudoku generateSudoku(unsigned n)
 
 int main(int argc, char** argv)
 {
-  ASSERT(argc == 3, cerr << "Usage: " << argv[0] << " dimension(4x4,9x9,16x16) " << " level(easy,medium,hard)" << endl);
+  ASSERT(argc == 3, cerr << "Usage: " << argv[0] << " dimension(ex.4x4,9x9,16x16) " << " level(easy,medium,hard)" << endl);
 
   unsigned n = stoi(argv[1]);
   string level = argv[2];
@@ -239,9 +245,13 @@ int main(int argc, char** argv)
   sudoku = readSudoku(n,level);
   generateFormula(sudoku,n);
 
-  system("minisat dimacs.cnf sudoku.out");
+  system("minisat dimacs.cnf sudoku.out >> minisat.txt");
 
-  system("~/ubcsat/ubcsat-beta-12-b18/ubcsat -alg saps -i dimacs.cnf -solve");
+  system("~/ubcsat/ubcsat-beta-12-b18/ubcsat -alg saps -i dimacs.cnf -solve >> ubcsat_saps.txt");
+
+  system("~/ubcsat/ubcsat-beta-12-b18/ubcsat -alg gsat -i dimacs.cnf -solve >> ubcsat_gsat.txt");
+
+  system("~/ubcsat/ubcsat-beta-12-b18/ubcsat -alg novelty+ -i dimacs.cnf -runs 100 -solve >> ubcsat_novelty.txt");
 
   sudoku = generateSudoku(n);
 
