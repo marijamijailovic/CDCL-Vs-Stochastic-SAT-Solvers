@@ -1,0 +1,804 @@
+# 
+# UBCSAT version 1.2-b18 BETA -- avoid using for published results
+# 
+# http://ubcsat.dtompkins.com
+# 
+# ubcsat -h for help
+# 
+#  -alg gsat
+#  -runs 1 
+#  -cutoff 100000 
+#  -timeout 0 
+#  -gtimeout 0 
+#  -abstime 0
+#  -systime 0
+#  -timeres 1000 
+#  -noimprove 0 
+#  -earlysteps 0 
+#  -earlyqual 0 
+#  -earlywqual 0 
+#  -strikes 0 
+#  -target 0 
+#  -wtarget 0 
+#  -seed 1057107892 
+#  -solve 1
+#  -find,-numsol 1 
+#  -findunique 0 
+#  -srestart 0 
+#  -prestart 0 
+#  -drestart 0 
+# 
+# 
+# UBCSAT default output: 
+#    'ubcsat -r out null' to suppress, 'ubcsat -hc' for customization help
+# 
+# 
+# Output Columns: |run|found|best|beststep|steps|
+# 
+# run: Run Number
+# found: Target Solution Quality Found? (1 => yes)
+# best: Best (Lowest) # of False Clauses Found
+# beststep: Step of Best (Lowest) # of False Clauses Found
+# steps: Total Number of Search Steps
+# 
+#       F  Best                 Step                Total 
+#   Run N Sol'n                   of               Search 
+#   No. D Found                 Best                Steps 
+# 
+      1 0   115                 3176               100000
+# No Solution found for -target 0
+
+
+Variables = 4096
+Clauses = 117353
+TotalLiterals = 241769
+TotalCPUTimeElapsed = 0.150     
+FlipsPerSecond = 666667 
+RunsExecuted = 1
+SuccessfulRuns = 0
+PercentSuccess = 0.00  
+Steps_Mean = 100000
+Steps_CoeffVariance = 0
+Steps_Median = 100000
+CPUTime_Mean = 0.15
+CPUTime_CoeffVariance = 0
+CPUTime_Median = 0.15
+
+
+# 
+# UBCSAT version 1.2-b18 BETA -- avoid using for published results
+# 
+# http://ubcsat.dtompkins.com
+# 
+# ubcsat -h for help
+# 
+#  -alg gsat
+#  -runs 1 
+#  -cutoff 100000 
+#  -timeout 0 
+#  -gtimeout 0 
+#  -abstime 0
+#  -systime 0
+#  -timeres 1000 
+#  -noimprove 0 
+#  -earlysteps 0 
+#  -earlyqual 0 
+#  -earlywqual 0 
+#  -strikes 0 
+#  -target 0 
+#  -wtarget 0 
+#  -seed 1090988003 
+#  -solve 1
+#  -find,-numsol 1 
+#  -findunique 0 
+#  -srestart 0 
+#  -prestart 0 
+#  -drestart 0 
+# 
+# 
+# UBCSAT default output: 
+#    'ubcsat -r out null' to suppress, 'ubcsat -hc' for customization help
+# 
+# 
+# Output Columns: |run|found|best|beststep|steps|
+# 
+# run: Run Number
+# found: Target Solution Quality Found? (1 => yes)
+# best: Best (Lowest) # of False Clauses Found
+# beststep: Step of Best (Lowest) # of False Clauses Found
+# steps: Total Number of Search Steps
+# 
+#       F  Best                 Step                Total 
+#   Run N Sol'n                   of               Search 
+#   No. D Found                 Best                Steps 
+# 
+      1 0   114                 2075               100000
+# No Solution found for -target 0
+
+
+Variables = 4096
+Clauses = 117353
+TotalLiterals = 241769
+TotalCPUTimeElapsed = 0.160     
+FlipsPerSecond = 625000 
+RunsExecuted = 1
+SuccessfulRuns = 0
+PercentSuccess = 0.00  
+Steps_Mean = 100000
+Steps_CoeffVariance = 0
+Steps_Median = 100000
+CPUTime_Mean = 0.16
+CPUTime_CoeffVariance = 0
+CPUTime_Median = 0.16
+
+
+# 
+# UBCSAT version 1.2-b18 BETA -- avoid using for published results
+# 
+# http://ubcsat.dtompkins.com
+# 
+# ubcsat -h for help
+# 
+#  -alg gsat
+#  -runs 1 
+#  -cutoff 100000 
+#  -timeout 0 
+#  -gtimeout 0 
+#  -abstime 0
+#  -systime 0
+#  -timeres 1000 
+#  -noimprove 0 
+#  -earlysteps 0 
+#  -earlyqual 0 
+#  -earlywqual 0 
+#  -strikes 0 
+#  -target 0 
+#  -wtarget 0 
+#  -seed 1124367341 
+#  -solve 1
+#  -find,-numsol 1 
+#  -findunique 0 
+#  -srestart 0 
+#  -prestart 0 
+#  -drestart 0 
+# 
+# 
+# UBCSAT default output: 
+#    'ubcsat -r out null' to suppress, 'ubcsat -hc' for customization help
+# 
+# 
+# Output Columns: |run|found|best|beststep|steps|
+# 
+# run: Run Number
+# found: Target Solution Quality Found? (1 => yes)
+# best: Best (Lowest) # of False Clauses Found
+# beststep: Step of Best (Lowest) # of False Clauses Found
+# steps: Total Number of Search Steps
+# 
+#       F  Best                 Step                Total 
+#   Run N Sol'n                   of               Search 
+#   No. D Found                 Best                Steps 
+# 
+      1 0   105                 2464               100000
+# No Solution found for -target 0
+
+
+Variables = 4096
+Clauses = 117353
+TotalLiterals = 241769
+TotalCPUTimeElapsed = 0.130     
+FlipsPerSecond = 769231 
+RunsExecuted = 1
+SuccessfulRuns = 0
+PercentSuccess = 0.00  
+Steps_Mean = 100000
+Steps_CoeffVariance = 0
+Steps_Median = 100000
+CPUTime_Mean = 0.13
+CPUTime_CoeffVariance = 0
+CPUTime_Median = 0.13
+
+
+# 
+# UBCSAT version 1.2-b18 BETA -- avoid using for published results
+# 
+# http://ubcsat.dtompkins.com
+# 
+# ubcsat -h for help
+# 
+#  -alg gsat
+#  -runs 1 
+#  -cutoff 100000 
+#  -timeout 0 
+#  -gtimeout 0 
+#  -abstime 0
+#  -systime 0
+#  -timeres 1000 
+#  -noimprove 0 
+#  -earlysteps 0 
+#  -earlyqual 0 
+#  -earlywqual 0 
+#  -strikes 0 
+#  -target 0 
+#  -wtarget 0 
+#  -seed 1156787127 
+#  -solve 1
+#  -find,-numsol 1 
+#  -findunique 0 
+#  -srestart 0 
+#  -prestart 0 
+#  -drestart 0 
+# 
+# 
+# UBCSAT default output: 
+#    'ubcsat -r out null' to suppress, 'ubcsat -hc' for customization help
+# 
+# 
+# Output Columns: |run|found|best|beststep|steps|
+# 
+# run: Run Number
+# found: Target Solution Quality Found? (1 => yes)
+# best: Best (Lowest) # of False Clauses Found
+# beststep: Step of Best (Lowest) # of False Clauses Found
+# steps: Total Number of Search Steps
+# 
+#       F  Best                 Step                Total 
+#   Run N Sol'n                   of               Search 
+#   No. D Found                 Best                Steps 
+# 
+      1 0   115                 2361               100000
+# No Solution found for -target 0
+
+
+Variables = 4096
+Clauses = 117354
+TotalLiterals = 241770
+TotalCPUTimeElapsed = 0.660     
+FlipsPerSecond = 151515 
+RunsExecuted = 1
+SuccessfulRuns = 0
+PercentSuccess = 0.00  
+Steps_Mean = 100000
+Steps_CoeffVariance = 0
+Steps_Median = 100000
+CPUTime_Mean = 0.66
+CPUTime_CoeffVariance = 0
+CPUTime_Median = 0.66
+
+
+# 
+# UBCSAT version 1.2-b18 BETA -- avoid using for published results
+# 
+# http://ubcsat.dtompkins.com
+# 
+# ubcsat -h for help
+# 
+#  -alg gsat
+#  -runs 1 
+#  -cutoff 100000 
+#  -timeout 0 
+#  -gtimeout 0 
+#  -abstime 0
+#  -systime 0
+#  -timeres 1000 
+#  -noimprove 0 
+#  -earlysteps 0 
+#  -earlyqual 0 
+#  -earlywqual 0 
+#  -strikes 0 
+#  -target 0 
+#  -wtarget 0 
+#  -seed 1208511235 
+#  -solve 1
+#  -find,-numsol 1 
+#  -findunique 0 
+#  -srestart 0 
+#  -prestart 0 
+#  -drestart 0 
+# 
+# 
+# UBCSAT default output: 
+#    'ubcsat -r out null' to suppress, 'ubcsat -hc' for customization help
+# 
+# 
+# Output Columns: |run|found|best|beststep|steps|
+# 
+# run: Run Number
+# found: Target Solution Quality Found? (1 => yes)
+# best: Best (Lowest) # of False Clauses Found
+# beststep: Step of Best (Lowest) # of False Clauses Found
+# steps: Total Number of Search Steps
+# 
+#       F  Best                 Step                Total 
+#   Run N Sol'n                   of               Search 
+#   No. D Found                 Best                Steps 
+# 
+      1 0   108                 2275               100000
+# No Solution found for -target 0
+
+
+Variables = 4096
+Clauses = 117354
+TotalLiterals = 241770
+TotalCPUTimeElapsed = 0.620     
+FlipsPerSecond = 161290 
+RunsExecuted = 1
+SuccessfulRuns = 0
+PercentSuccess = 0.00  
+Steps_Mean = 100000
+Steps_CoeffVariance = 0
+Steps_Median = 100000
+CPUTime_Mean = 0.62
+CPUTime_CoeffVariance = 0
+CPUTime_Median = 0.62
+
+
+# 
+# UBCSAT version 1.2-b18 BETA -- avoid using for published results
+# 
+# http://ubcsat.dtompkins.com
+# 
+# ubcsat -h for help
+# 
+#  -alg gsat
+#  -runs 1 
+#  -cutoff 100000 
+#  -timeout 0 
+#  -gtimeout 0 
+#  -abstime 0
+#  -systime 0
+#  -timeres 1000 
+#  -noimprove 0 
+#  -earlysteps 0 
+#  -earlyqual 0 
+#  -earlywqual 0 
+#  -strikes 0 
+#  -target 0 
+#  -wtarget 0 
+#  -seed 1242146976 
+#  -solve 1
+#  -find,-numsol 1 
+#  -findunique 0 
+#  -srestart 0 
+#  -prestart 0 
+#  -drestart 0 
+# 
+# 
+# UBCSAT default output: 
+#    'ubcsat -r out null' to suppress, 'ubcsat -hc' for customization help
+# 
+# 
+# Output Columns: |run|found|best|beststep|steps|
+# 
+# run: Run Number
+# found: Target Solution Quality Found? (1 => yes)
+# best: Best (Lowest) # of False Clauses Found
+# beststep: Step of Best (Lowest) # of False Clauses Found
+# steps: Total Number of Search Steps
+# 
+#       F  Best                 Step                Total 
+#   Run N Sol'n                   of               Search 
+#   No. D Found                 Best                Steps 
+# 
+      1 0   105                 1999               100000
+# No Solution found for -target 0
+
+
+Variables = 4096
+Clauses = 117352
+TotalLiterals = 241768
+TotalCPUTimeElapsed = 0.130     
+FlipsPerSecond = 769231 
+RunsExecuted = 1
+SuccessfulRuns = 0
+PercentSuccess = 0.00  
+Steps_Mean = 100000
+Steps_CoeffVariance = 0
+Steps_Median = 100000
+CPUTime_Mean = 0.13
+CPUTime_CoeffVariance = 0
+CPUTime_Median = 0.13
+
+
+# 
+# UBCSAT version 1.2-b18 BETA -- avoid using for published results
+# 
+# http://ubcsat.dtompkins.com
+# 
+# ubcsat -h for help
+# 
+#  -alg gsat
+#  -runs 1 
+#  -cutoff 100000 
+#  -timeout 0 
+#  -gtimeout 0 
+#  -abstime 0
+#  -systime 0
+#  -timeres 1000 
+#  -noimprove 0 
+#  -earlysteps 0 
+#  -earlyqual 0 
+#  -earlywqual 0 
+#  -strikes 0 
+#  -target 0 
+#  -wtarget 0 
+#  -seed 1274720482 
+#  -solve 1
+#  -find,-numsol 1 
+#  -findunique 0 
+#  -srestart 0 
+#  -prestart 0 
+#  -drestart 0 
+# 
+# 
+# UBCSAT default output: 
+#    'ubcsat -r out null' to suppress, 'ubcsat -hc' for customization help
+# 
+# 
+# Output Columns: |run|found|best|beststep|steps|
+# 
+# run: Run Number
+# found: Target Solution Quality Found? (1 => yes)
+# best: Best (Lowest) # of False Clauses Found
+# beststep: Step of Best (Lowest) # of False Clauses Found
+# steps: Total Number of Search Steps
+# 
+#       F  Best                 Step                Total 
+#   Run N Sol'n                   of               Search 
+#   No. D Found                 Best                Steps 
+# 
+      1 0   123                 1913               100000
+# No Solution found for -target 0
+
+
+Variables = 4096
+Clauses = 117349
+TotalLiterals = 241765
+TotalCPUTimeElapsed = 0.170     
+FlipsPerSecond = 588235 
+RunsExecuted = 1
+SuccessfulRuns = 0
+PercentSuccess = 0.00  
+Steps_Mean = 100000
+Steps_CoeffVariance = 0
+Steps_Median = 100000
+CPUTime_Mean = 0.17
+CPUTime_CoeffVariance = 0
+CPUTime_Median = 0.17
+
+
+# 
+# UBCSAT version 1.2-b18 BETA -- avoid using for published results
+# 
+# http://ubcsat.dtompkins.com
+# 
+# ubcsat -h for help
+# 
+#  -alg gsat
+#  -runs 1 
+#  -cutoff 100000 
+#  -timeout 0 
+#  -gtimeout 0 
+#  -abstime 0
+#  -systime 0
+#  -timeres 1000 
+#  -noimprove 0 
+#  -earlysteps 0 
+#  -earlyqual 0 
+#  -earlywqual 0 
+#  -strikes 0 
+#  -target 0 
+#  -wtarget 0 
+#  -seed 1308342616 
+#  -solve 1
+#  -find,-numsol 1 
+#  -findunique 0 
+#  -srestart 0 
+#  -prestart 0 
+#  -drestart 0 
+# 
+# 
+# UBCSAT default output: 
+#    'ubcsat -r out null' to suppress, 'ubcsat -hc' for customization help
+# 
+# 
+# Output Columns: |run|found|best|beststep|steps|
+# 
+# run: Run Number
+# found: Target Solution Quality Found? (1 => yes)
+# best: Best (Lowest) # of False Clauses Found
+# beststep: Step of Best (Lowest) # of False Clauses Found
+# steps: Total Number of Search Steps
+# 
+#       F  Best                 Step                Total 
+#   Run N Sol'n                   of               Search 
+#   No. D Found                 Best                Steps 
+# 
+      1 0   116                 2543               100000
+# No Solution found for -target 0
+
+
+Variables = 4096
+Clauses = 117351
+TotalLiterals = 241767
+TotalCPUTimeElapsed = 0.150     
+FlipsPerSecond = 666667 
+RunsExecuted = 1
+SuccessfulRuns = 0
+PercentSuccess = 0.00  
+Steps_Mean = 100000
+Steps_CoeffVariance = 0
+Steps_Median = 100000
+CPUTime_Mean = 0.15
+CPUTime_CoeffVariance = 0
+CPUTime_Median = 0.15
+
+
+# 
+# UBCSAT version 1.2-b18 BETA -- avoid using for published results
+# 
+# http://ubcsat.dtompkins.com
+# 
+# ubcsat -h for help
+# 
+#  -alg gsat
+#  -runs 1 
+#  -cutoff 100000 
+#  -timeout 0 
+#  -gtimeout 0 
+#  -abstime 0
+#  -systime 0
+#  -timeres 1000 
+#  -noimprove 0 
+#  -earlysteps 0 
+#  -earlyqual 0 
+#  -earlywqual 0 
+#  -strikes 0 
+#  -target 0 
+#  -wtarget 0 
+#  -seed 1344602251 
+#  -solve 1
+#  -find,-numsol 1 
+#  -findunique 0 
+#  -srestart 0 
+#  -prestart 0 
+#  -drestart 0 
+# 
+# 
+# UBCSAT default output: 
+#    'ubcsat -r out null' to suppress, 'ubcsat -hc' for customization help
+# 
+# 
+# Output Columns: |run|found|best|beststep|steps|
+# 
+# run: Run Number
+# found: Target Solution Quality Found? (1 => yes)
+# best: Best (Lowest) # of False Clauses Found
+# beststep: Step of Best (Lowest) # of False Clauses Found
+# steps: Total Number of Search Steps
+# 
+#       F  Best                 Step                Total 
+#   Run N Sol'n                   of               Search 
+#   No. D Found                 Best                Steps 
+# 
+      1 0   111                 2045               100000
+# No Solution found for -target 0
+
+
+Variables = 4096
+Clauses = 117340
+TotalLiterals = 241756
+TotalCPUTimeElapsed = 0.120     
+FlipsPerSecond = 833333 
+RunsExecuted = 1
+SuccessfulRuns = 0
+PercentSuccess = 0.00  
+Steps_Mean = 100000
+Steps_CoeffVariance = 0
+Steps_Median = 100000
+CPUTime_Mean = 0.12
+CPUTime_CoeffVariance = 0
+CPUTime_Median = 0.12
+
+
+# 
+# UBCSAT version 1.2-b18 BETA -- avoid using for published results
+# 
+# http://ubcsat.dtompkins.com
+# 
+# ubcsat -h for help
+# 
+#  -alg gsat
+#  -runs 1 
+#  -cutoff 100000 
+#  -timeout 0 
+#  -gtimeout 0 
+#  -abstime 0
+#  -systime 0
+#  -timeres 1000 
+#  -noimprove 0 
+#  -earlysteps 0 
+#  -earlyqual 0 
+#  -earlywqual 0 
+#  -strikes 0 
+#  -target 0 
+#  -wtarget 0 
+#  -seed 1393197017 
+#  -solve 1
+#  -find,-numsol 1 
+#  -findunique 0 
+#  -srestart 0 
+#  -prestart 0 
+#  -drestart 0 
+# 
+# 
+# UBCSAT default output: 
+#    'ubcsat -r out null' to suppress, 'ubcsat -hc' for customization help
+# 
+# 
+# Output Columns: |run|found|best|beststep|steps|
+# 
+# run: Run Number
+# found: Target Solution Quality Found? (1 => yes)
+# best: Best (Lowest) # of False Clauses Found
+# beststep: Step of Best (Lowest) # of False Clauses Found
+# steps: Total Number of Search Steps
+# 
+#       F  Best                 Step                Total 
+#   Run N Sol'n                   of               Search 
+#   No. D Found                 Best                Steps 
+# 
+      1 0   104                 2151               100000
+# No Solution found for -target 0
+
+
+Variables = 4096
+Clauses = 117340
+TotalLiterals = 241756
+TotalCPUTimeElapsed = 0.140     
+FlipsPerSecond = 714286 
+RunsExecuted = 1
+SuccessfulRuns = 0
+PercentSuccess = 0.00  
+Steps_Mean = 100000
+Steps_CoeffVariance = 0
+Steps_Median = 100000
+CPUTime_Mean = 0.14
+CPUTime_CoeffVariance = 0
+CPUTime_Median = 0.14
+
+
+# 
+# UBCSAT version 1.2-b18 BETA -- avoid using for published results
+# 
+# http://ubcsat.dtompkins.com
+# 
+# ubcsat -h for help
+# 
+#  -alg gsat
+#  -runs 1 
+#  -cutoff 100000 
+#  -timeout 0 
+#  -gtimeout 0 
+#  -abstime 0
+#  -systime 0
+#  -timeres 1000 
+#  -noimprove 0 
+#  -earlysteps 0 
+#  -earlyqual 0 
+#  -earlywqual 0 
+#  -strikes 0 
+#  -target 0 
+#  -wtarget 0 
+#  -seed 1424680208 
+#  -solve 1
+#  -find,-numsol 1 
+#  -findunique 0 
+#  -srestart 0 
+#  -prestart 0 
+#  -drestart 0 
+# 
+# 
+# UBCSAT default output: 
+#    'ubcsat -r out null' to suppress, 'ubcsat -hc' for customization help
+# 
+# 
+# Output Columns: |run|found|best|beststep|steps|
+# 
+# run: Run Number
+# found: Target Solution Quality Found? (1 => yes)
+# best: Best (Lowest) # of False Clauses Found
+# beststep: Step of Best (Lowest) # of False Clauses Found
+# steps: Total Number of Search Steps
+# 
+#       F  Best                 Step                Total 
+#   Run N Sol'n                   of               Search 
+#   No. D Found                 Best                Steps 
+# 
+      1 0   115                 2051               100000
+# No Solution found for -target 0
+
+
+Variables = 4096
+Clauses = 117341
+TotalLiterals = 241757
+TotalCPUTimeElapsed = 0.130     
+FlipsPerSecond = 769231 
+RunsExecuted = 1
+SuccessfulRuns = 0
+PercentSuccess = 0.00  
+Steps_Mean = 100000
+Steps_CoeffVariance = 0
+Steps_Median = 100000
+CPUTime_Mean = 0.13
+CPUTime_CoeffVariance = 0
+CPUTime_Median = 0.13
+
+
+# 
+# UBCSAT version 1.2-b18 BETA -- avoid using for published results
+# 
+# http://ubcsat.dtompkins.com
+# 
+# ubcsat -h for help
+# 
+#  -alg gsat
+#  -runs 1 
+#  -cutoff 100000 
+#  -timeout 0 
+#  -gtimeout 0 
+#  -abstime 0
+#  -systime 0
+#  -timeres 1000 
+#  -noimprove 0 
+#  -earlysteps 0 
+#  -earlyqual 0 
+#  -earlywqual 0 
+#  -strikes 0 
+#  -target 0 
+#  -wtarget 0 
+#  -seed 1461718728 
+#  -solve 1
+#  -find,-numsol 1 
+#  -findunique 0 
+#  -srestart 0 
+#  -prestart 0 
+#  -drestart 0 
+# 
+# 
+# UBCSAT default output: 
+#    'ubcsat -r out null' to suppress, 'ubcsat -hc' for customization help
+# 
+# 
+# Output Columns: |run|found|best|beststep|steps|
+# 
+# run: Run Number
+# found: Target Solution Quality Found? (1 => yes)
+# best: Best (Lowest) # of False Clauses Found
+# beststep: Step of Best (Lowest) # of False Clauses Found
+# steps: Total Number of Search Steps
+# 
+#       F  Best                 Step                Total 
+#   Run N Sol'n                   of               Search 
+#   No. D Found                 Best                Steps 
+# 
+      1 0   104                 2341               100000
+# No Solution found for -target 0
+
+
+Variables = 4096
+Clauses = 117344
+TotalLiterals = 241760
+TotalCPUTimeElapsed = 0.160     
+FlipsPerSecond = 625000 
+RunsExecuted = 1
+SuccessfulRuns = 0
+PercentSuccess = 0.00  
+Steps_Mean = 100000
+Steps_CoeffVariance = 0
+Steps_Median = 100000
+CPUTime_Mean = 0.16
+CPUTime_CoeffVariance = 0
+CPUTime_Median = 0.16
+
+
